@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtone Synthesizer</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        .wave-container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overtone Synthesizer</h1>
+
+    <!-- Waveform checkboxes and individual graphs -->
+    <div class="wave-container">
+        <canvas id="waveCanvas1" width="400" height="100"></canvas>
+        <input type="checkbox" id="wave1" checked>
+        <label for="wave1">1st Overtone</label>
+    </div>
+    <div class="wave-container">
+        <canvas id="waveCanvas2" width="400" height="100"></canvas>
+        <input type="checkbox" id="wave2" checked>
+        <label for="wave2">2nd Overtone</label>
+    </div>
+    <div class="wave-container">
+        <canvas id="waveCanvas3" width="400" height="100"></canvas>
+        <input type="checkbox" id="wave3" checked>
+        <label for="wave3">3rd Overtone</label>
+    </div>
+    <div class="wave-container">
+        <canvas id="waveCanvas4" width="400" height="100"></canvas>
+        <input type="checkbox" id="wave4" checked>
+        <label for="wave4">4th Overtone</label>
+    </div>
+    <div class="wave-container">
+        <canvas id="waveCanvas5" width="400" height="100"></canvas>
+        <input type="checkbox" id="wave5" checked>
+        <label for="wave5">5th Overtone</label>
+    </div>
+
+    <!-- Combined wave display -->
+    <h2>Combined Wave</h2>
+    <canvas id="combinedWaveCanvas" width="400" height="200"></canvas>
+    <br>
+    <!-- Play button -->
+    <button id="playButton">Play Sound</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
